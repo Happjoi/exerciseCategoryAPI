@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Exercícios</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Exercícios</h1>
+
+    <section class="form-section">
+      <h2>Cadastrar Categoria</h2>
+      <form id="categoryForm">
+        <input type="text" id="category" placeholder="Nome da categoria" required>
+        <input type="text" id="exerciseType" placeholder="Tipo de exercício (Push/Pull/etc)" required>
+        <button type="submit">Cadastrar Categoria</button>
+      </form>
+    </section>
+
+    <section class="form-section">
+      <h2>Cadastrar Exercício</h2>
+      <form id="exerciseForm">
+        <input type="text" id="name" placeholder="Nome do exercício" required>
+        <input type="text" id="description" placeholder="Descrição" required>
+        <select id="categorySelect" required>
+          <option value="">Selecione a categoria</option>
+        </select>
+        <input type="text" id="image" placeholder="URL da imagem" required>
+        <input type="number" id="repetitions" placeholder="Repetições" required>
+        <button type="submit">Cadastrar Exercício</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Lista de Exercícios</h2>
+      <div id="exerciseList"></div>
+    </section>
+  </div>
+
+  <script src="js/Exercise.js"></script>
+  <script src="js/Categoria.js"></script>
+</body>
+</html>
