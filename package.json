@@ -1,0 +1,20 @@
+{
+  "name": "lista-de-exercicio",
+  "version": "1.0.0",
+  "description": "Uma lista de exercicio dividido por categorias",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "João Italo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.9"
+  }
+}
